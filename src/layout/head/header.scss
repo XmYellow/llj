@@ -1,0 +1,43 @@
+.header {
+  max-width: 1000px;
+  height: 104px;
+  margin: auto;
+  background: #fff;
+  &_logo {
+    display: inline-block;
+    margin: 24px 50px;
+  }
+}
+
+.menu {
+  display: inline-block;
+  vertical-align: top;
+  margin: 32px 10px 0;
+  float: right;
+  &_item {
+    display: inline-block;
+    list-style: none;
+    padding: 0 20px;
+    font-size: 18px;
+    &:last-child {
+      padding-right: 0;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: #898989;
+      &:hover {
+        color: #005352;
+      }
+    }
+    &.active{
+      a {
+        color: #005352;
+      }
+    }
+  }
+}
+.header-box{
+  width: 100%;
+  background: #fff;
+}

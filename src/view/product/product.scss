@@ -1,0 +1,19 @@
+@import "./../../style/utill";
+
+.imgCenter {
+  text-align: center;
+  padding-bottom: 30px;
+  img {
+    vertical-align: top;
+    padding: 15px 0;
+  }
+  &_middle {
+    margin: 0 30px;
+  }
+}
+
+.product {
+  &-img1 {
+    margin-top: -220px;
+  }
+}

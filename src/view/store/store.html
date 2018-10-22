@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <title>首页</title>
+    <%= require('./../../layout/head/Meta.ejs') %>
+</head>
+<body>
+<div class="page">
+    <%= require('./../../layout/head/Header.ejs') %>
+    <div class="cooperation-banner">
+        <img src="../../image/asset4/banner1.png" class="cooperation_banner wow fadeIn" data-wow-duration="3s" />
+    </div>
+    <div class="store">
+        <div class="line"></div>
+        <img class="product_banner cooperation_centerImg wow fadeInLeft" data-wow-duration="2s" src="../../image/asset4/banner2.png"/>
+        <img class="cooperation_centerImg" src="../../image/asset4/t1.png"/>
+        <div class="line"></div>
+        <img class="cooperation_centerImg" src="../../image/asset4/t2.png"/>
+        <div class="store_swiper">
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper store_swiper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="swiper-slide__img" src="./../../image/asset4/slide0.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-slide__img" src="./../../image/asset4/slide1.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-slide__img" src="./../../image/asset4/slide2.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-slide__img" src="./../../image/asset4/slide3.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-slide__img" src="./../../image/asset4/slide4.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-slide__img" src="./../../image/asset4/slide5.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-slide__img" src="./../../image/asset4/slide6.png">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <%= require('./../../layout/footer/Footer.ejs') %>
+</div>
+</body>
+</html>
