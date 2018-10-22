@@ -33,45 +33,15 @@ let config = {
 }
 
 config.module.rules.push({
-    test: /\.(js|jsx)$/,
-    exclude: /node_modules/,
-    use: [{
-        loader: 'babel-loader',
+        test: '/\.js$/',
+        loader: 'babel',
+        // exclude: path.resolve(__dirname, 'node_modules'),
+        include: path.resolve(__dirname, 'src'),
         query: {
-            cacheDirectory: true,
-            plugins: [
-                'babel-plugin-transform-class-properties',
-                'babel-plugin-syntax-dynamic-import',
-                [
-                    'babel-plugin-transform-runtime',
-                    {
-                        helpers: true,
-                        polyfill: false, // we polyfill needed features in src/normalize.js
-                        regenerator: true,
-                    },
-                ],
-                [
-                    'babel-plugin-transform-object-rest-spread',
-                    {
-                        useBuiltIns: true // we polyfill Object.assign in src/normalize.js
-                    },
-                ],
-            ],
-            presets: [
-                ['babel-preset-env', {//自动es转义支持
-                    modules: false,
-                    // babel 转译成 ie9支持
-                    targets: {
-                        ie9: true,
-                    },
-                    // tuglify 会把代码完全转换为 ES5 以支持压缩 JS 代码。
-                    uglify: true,
-                }],
-            ]
-        },
-    }],
-})
-
+            presets: ['env']
+        }
+    },
+)
 // Images
 // ------------------------------------
 config.module.rules.push({
@@ -157,10 +127,9 @@ config.plugins.push(extractStyles)
         },
     })
 })
-
 config.module.rules.push({
-    test: /\.ejs/,
-    loader: 'ejs-render-loader'
+    test: /\.(htm|html)$/i,
+    use: ['html-withimg-loader']
 })
 
 module.exports = config

@@ -2,22 +2,66 @@
 <html lang="zh">
 <head>
     <title>首页</title>
-    <%= require('./../../layout/head/Meta.ejs') %>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit"/>
 </head>
 <body>
 <div class="page">
-    <%= require('./../../layout/head/Header.ejs') %>
+    <div class="header-box">
+        <div class="header">
+            <a class="header_logo" href="/home.html">
+                <img src="../../image/asset/logo.png"/>
+            </a>
+            <ul class="menu">
+                <li class="menu_item" id="about">
+                    <a href="/home.html">
+                        <div class="header-label">ABOUT</div>
+                        <div class="header-name">关于我们</div>
+                    </a>
+                </li>
+                <li class="menu_item" id="cooperation">
+                    <a href="/cooperation.html">
+                        <div class="header-label">COOPERATION</div>
+                        <div class="header-name">加盟合作</div>
+                    </a>
+                </li>
+                <li class="menu_item" id="product">
+                    <a href="/product.html">
+                        <div class="header-label">PRODUCT</div>
+                        <div class="header-name">产品展示</div>
+                    </a>
+                </li>
+                <li class="menu_item" id="store">
+                    <a href="/store.html">
+                        <div class="header-label">STORE</div>
+                        <div class="header-name">门店展示</div>
+                    </a>
+                </li>
+                <li class="menu_item" id="contact">
+                    <a href="/contact.html">
+                        <div class="header-label">CONTACT</div>
+                        <div class="header-name">联系我们</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 
     <div class="home">
         <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide" style="background-image: url('./../../image/asset/banner1.png')">
+                <div class="swiper-slide">
+                    <img src="./../../image/asset/banner1.png" alt="">
                 </div>
-                <div class="swiper-slide" style="background-image: url('./../../image/asset/banner2.png')">
+                <div class="swiper-slide">
+                    <img src='./../../image/asset/banner2.png' alt="">
                 </div>
-                <div class="swiper-slide" style="background-image: url('./../../image/asset/banner3.jpg')">
+                <div class="swiper-slide">
+                    <img src='./../../image/asset/banner3.jpg' alt="">
                 </div>
             </div>
             <!-- If we need pagination -->
@@ -163,7 +207,9 @@
             <img class="scroll-box__bg" s src="./../../image/asset/toTop.png">
         </div>
     </div>
-    <%= require('./../../layout/footer/Footer.ejs') %>
+    <div class="footer">
+        <img class='footer-img' src="./../../image/asset/footer.png">
+    </div>
 </div>
 </body>
 </html>

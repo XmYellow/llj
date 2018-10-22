@@ -56,12 +56,19 @@ img {
   }
 
   .swiper-slide {
+    position: relative;
     display: block;
     margin: auto;
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding-top: 41%;
+    img{
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
   }
 
   .swiper-pagination {

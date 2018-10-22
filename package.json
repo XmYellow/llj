@@ -1,5 +1,5 @@
 {
-  "name": "llj",
+  "name": "multipage-start-kit",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,7 @@
   "author": "HuaRongSAO",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.1.0",
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.1.1",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
@@ -18,6 +19,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-latest": "^6.24.1",
     "chalk": "^2.1.0",
     "clean-webpack-plugin": "^0.1.16",
     "cross-env": "^5.0.5",
@@ -27,8 +29,9 @@
     "figures": "^2.0.0",
     "file-loader": "^0.11.2",
     "glob": "^7.1.2",
-    "html-loader": "^0.5.1",
+    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^2.30.1",
+    "html-withimg-loader": "^0.1.16",
     "include-media": "^1.4.9",
     "ip": "^1.1.5",
     "node-sass": "^4.5.3",
@@ -36,6 +39,7 @@
     "pm2": "^2.6.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^0.5.9",
     "watch": "^1.0.2",
     "webpack": "^3.5.3",
@@ -44,13 +48,14 @@
     "webpack-hot-middleware": "^2.18.2"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "animate.css": "^3.7.0",
     "compression": "^1.7.0",
     "express": "^4.15.4",
     "lodash": "^4.17.4",
     "object-assign": "^4.1.1",
     "promise": "^8.0.1",
-    "swiper": "^4.4.1",
+    "swiper": "^3.0",
     "whatwg-fetch": "^2.0.3",
     "wowjs": "^1.1.3"
   }
